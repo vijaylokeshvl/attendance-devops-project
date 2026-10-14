@@ -1,0 +1,43 @@
+Attendance-Management-System/
+│
+├── admin/
+│       |  
+|	├── dashboard.php
+|	├── students.php
+|	├── teachers.php
+|	├── subjects.php
+|	├── attendance.php
+|	└── reports.php
+│
+├── teacher/
+│   ├── dashboard.php
+│   ├── mark_attendance.php
+│   └── view_attendance.php
+│
+├── student/
+│   ├── dashboard.php
+│   └── attendance.php
+│
+├── includes/
+│   ├── db.php
+│   ├── auth.php
+│   ├── functions.php
+│   ├── header.php
+│   ├── footer.php
+│   └── navbar.php
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── database/
+│   └── attendance_management_system.sql
+│
+├── images/
+│
+├── index.php
+├── login.php
+├── logout.php
+└── README.md

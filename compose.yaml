@@ -1,0 +1,33 @@
+
+services:
+  web:
+    build: .
+    ports:
+      - "8081:80"
+    environment:
+      DB_HOST: db
+      DB_NAME: attendance_management_system
+      DB_USER: root
+      DB_PASS: localRootPass123!
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: localRootPass123!
+      MYSQL_DATABASE: attendance_management_system
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database/attendance_management_system.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p$${MYSQL_ROOT_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+volumes:
+  db_data:
