@@ -144,7 +144,7 @@ Attendance-Management-System/
 ### 1 Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Attendance-Management-System.git
+git clone https://github.com/vijaylokeshvl/attendance-devops-project
 ```
 
 ### 2 Move Project
@@ -272,17 +272,7 @@ This project helped in understanding:
 
 ---
 
-# 👨‍💻 Author
 
-**Ayush Sahu**
-
-GitHub:
-https://github.com/realayushsahu-ux
-
-Portfolio:
-https://realayushsahu-ux.github.io/portfolio-v2/
-
----
 
 # ⭐ Support
 
